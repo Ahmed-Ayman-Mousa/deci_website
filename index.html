@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Favorite Topics</title>
+    <style>
+      * {
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        color: #333;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #f9f9f9;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: bold;
+      }
+      main {
+        position: relative;
+        overflow: hidden;
+        height: 85%;
+      }
+      section {
+        width: fit-content;
+        animation: slide 0.5s linear 0s forwards;
+      }
+      section:not(:nth-child(2)) {
+        text-align: left;
+        direction: ltr;
+        transform: translate(-100%, 0);
+      }
+      section:nth-child(2) {
+        position: absolute;
+        right: 0;
+        top: 190px;
+        text-align: right;
+        direction: rtl;
+        transform: translate(100%, 0);
+      }
+      section:nth-child(3) {
+        position: relative;
+        top: 45%;
+      }
+
+      @keyframes slide {
+        to {
+          transform: translate(0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Favorite Topics</h1>
+    </header>
+    <main>
+      <section>
+        <h1>Topics I enjoyed the most</h1>
+        <p>
+          Here are some of the topics that I found the most interesting and
+          enjoyable:
+        </p>
+        <ul>
+          <li>Artificial Intelligence</li>
+          <li>Data Science</li>
+          <li>Web Development</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Topics I want to learn more about</h1>
+        <p>
+          Here are some of the topics that I am curious about and want to learn
+          more:
+        </p>
+        <ul>
+          <li>Quantum Computing</li>
+          <li>Cybersecurity</li>
+          <li>Blockchain Technology</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Topics I thought were difficult</h1>
+        <p>
+          Here are some of the topics that I found challenging and had to work
+          hard to understand:
+        </p>
+        <ul>
+          <li>Advanced Mathematics</li>
+          <li>Computer Networking</li>
+          <li>Operating Systems</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
